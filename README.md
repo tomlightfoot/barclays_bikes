@@ -4,8 +4,5 @@ The purpose of this is to develop skills in both TDD and coding.
 
 
 require './DockingStation'
-require './Bike.rb'
 dockingstation = DockingStation.new
-bike = dockingstation.release_bike
-dockingstation.dock(bike)
-dockingstation.bike
+dockingstation.dock
