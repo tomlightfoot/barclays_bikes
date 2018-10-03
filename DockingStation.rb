@@ -1,21 +1,17 @@
+require './Bike'
+
 class DockingStation
-  def initialize
-    bikes = 0
-  end
 
   def release_bike
     Bike.new
   end
 
-  def dock_bike
-
+  def dock(bike)
+    @bike = bike
   end
 
-end
-
-class Bike
-
-  def working?
-    true
+  def bike
+    @bike
   end
+
 end
