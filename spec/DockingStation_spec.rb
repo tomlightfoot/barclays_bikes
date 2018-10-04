@@ -9,11 +9,8 @@ describe DockingStation do
   end
 
   describe '#dock(bike)' do
-    before(:each) do
-      @bike = Bike.new
-      subject.dock(@bike)
-    end
     it 'should raise an error when trying to dock' do
+      20.times { subject.dock(Bike.new) }
       expect { subject.dock(Bike.new) }.to raise_error 'Docking station at full capacity.'
     end
   end
