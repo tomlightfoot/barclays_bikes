@@ -3,11 +3,12 @@ require './Bike'
 class DockingStation
 
   def release_bike
-    fail 'No bikes available' unless @bike
+    fail 'No bikes available.' unless @bike
     @bike
   end
 
   def dock(bike)
+    fail 'Docking station at full capacity.' if @bike
     @bike = bike
   end
 

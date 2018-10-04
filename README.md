@@ -5,4 +5,5 @@ The purpose of this is to develop skills in both TDD and coding.
 
 require './DockingStation'
 dockingstation = DockingStation.new
+bike = Bike.new
 dockingstation.dock
